@@ -1,0 +1,128 @@
+* {
+  font-size: 24px;
+  color: #666;
+  font-family: arial, sans-serif;
+}
+
+table {
+  margin: 10px auto;
+  width: 500px;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+input::placeholder {
+  color: #DDD;
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+input:-ms-input-placeholder,
+input::-ms-input-placeholder {
+  color: #DDD;
+}
+
+.calculator {
+  box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px auto;
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: solid 1px #CCC;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.number {
+  border: solid 1px #CCC;
+  border-radius: 4px;
+  font-size: 24px;
+  color: #666;
+  margin: 10px 5px;
+  width: 42%;
+}
+
+.op_btn {
+  border: none;
+  border-radius: 4px;
+  font-size: 24px;
+  color: #666;
+  margin: 10px 5px;
+  width: 20%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.op_btn:hover, .op_btn:focus, .res_btn:hover, .res_btn:focus {
+  background-color: #ff9217;
+  color: #FFF;
+}
+
+.res_btn {
+  border: none;
+  border-radius: 4px;
+  font-size: 24px;
+  color: #666;
+  margin: 10px 0;
+  width: 10%;
+}
+
+.result {
+  border: solid 1px #CCC;
+  border-radius: 4px;
+  font-size: 24px;
+  color: #666;
+  margin: 10px 0;
+  width: 80%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  padding: 5px;
+  margin: 10px auto;
+  border-color: #ff9217;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-backface-visibility: hidden;
+  outline: 0;
+  background: #ff9217;
+  color: #FFF;
+}
+
+.btn:hover, .btn:focus {
+  background: #ff9217;
+  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+}

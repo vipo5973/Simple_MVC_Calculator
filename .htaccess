@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteRule styles.css public/css/styles.css [L]
+RewriteRule api.php public/api.php?q=$1 [L,QSA]
+RewriteRule ^$ public/index.php [L]
+RewriteRule ^(.*)$ public/index.php?url=$1 [L,QSA]
