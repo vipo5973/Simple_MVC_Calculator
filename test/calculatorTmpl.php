@@ -21,15 +21,19 @@
             operation = 'divided'; break;
         }
         if(number1!="" && number2!="") {
-          var xmlhttp = new XMLHttpRequest();
-          xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-              document.getElementById("result").value = this.responseText;
+          if(number2==0 && operation=='divided') {
+            document.getElementById("result").value = "N/A";
+          } else {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+              if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("result").value = this.responseText;
+              }
             }
-          };
-          //the root directory will need to change according to installation
-          xmlhttp.open("GET", "http://" + root + "/examples/Calculator/calculator/" + operation + "/" + number1 + "/" +  number2 + "/" + 1, true); // +
-          xmlhttp.send();
+            //the root directory will need to change according to installation
+            xmlhttp.open("GET", "http://" + root + "/examples/Calculator/calculator/" + operation + "/" + number1 + "/" +  number2 + "/" + 1, true); // +
+            xmlhttp.send();
+          }
         } else {
           return
         }
